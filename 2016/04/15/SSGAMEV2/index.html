@@ -90,7 +90,7 @@ game-server放置在你喜欢的目录下（本文例：">
 <meta property="og:description" content="下载可以通过一下途径获得服务器X64 链接: 链接: http://pan.baidu.com/s/1o6VIMKU 密码: cbsu服务器X86（32位） 链接: http://pan.baidu.com/s/1gevFsxd 密码: g3vjwget 直接用最新的 http://xqc.co:20001/123/game-server
 配置
 game-server放置在你喜欢的目录下（本文例：">
-<meta property="og:updated_time" content="2016-04-15T02:00:32.784Z">
+<meta property="og:updated_time" content="2016-04-15T02:18:41.817Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="宝大游戏模式V2服务端配置方法">
 <meta name="twitter:description" content="下载可以通过一下途径获得服务器X64 链接: 链接: http://pan.baidu.com/s/1o6VIMKU 密码: cbsu服务器X86（32位） 链接: http://pan.baidu.com/s/1gevFsxd 密码: g3vjwget 直接用最新的 http://xqc.co:20001/123/game-server
@@ -295,7 +295,7 @@ game-server放置在你喜欢的目录下（本文例：">
         <h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>可以通过一下途径获得<br>服务器X64 链接: 链接: <a href="http://pan.baidu.com/s/1o6VIMKU" target="_blank" rel="external">http://pan.baidu.com/s/1o6VIMKU</a> 密码: cbsu<br>服务器X86（32位） 链接: <a href="http://pan.baidu.com/s/1gevFsxd" target="_blank" rel="external">http://pan.baidu.com/s/1gevFsxd</a> 密码: g3vj<br>wget 直接用最新的 <a href="http://xqc.co:20001/123/game-server" target="_blank" rel="external">http://xqc.co:20001/123/game-server</a></p>
 <h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><ul>
 <li>game-server放置在你喜欢的目录下（本文例：/etc/game）</li>
-<li>chmod 777 game-server#赋予game-server 777权限</li>
+<li>chmod +X 766 game-server#赋予game-server 766权限</li>
 <li>创建json文件（本文例：1.json）</li>
 <li>1.json写入内容（本文例多端口版本）<br>{<br>  “server”:”0.0.0.0”,<br>  “local_address”: “127.0.0.1”,<br>  “local_port”:1080,<br>  “port_password”: {<br> “XXXX”: “XXXX”,<br> “XXXX”: “XXXX”,<br> “XXXX”: “XXXX”<br>  },<br>  “timeout”:600,<br>  “method”:”chacha20”,<br>  “fast_open”: false<br>}</li>
 </ul>
@@ -307,7 +307,7 @@ game-server放置在你喜欢的目录下（本文例：">
 <h3 id="开机自启动"><a href="#开机自启动" class="headerlink" title="开机自启动"></a>开机自启动</h3><ul>
 <li>先在 /etc/game目录下新建一个s.sh</li>
 <li>然后写入<br>cd /etc/game<br>nohup ./game-server -w koolshare.github.io -c 1.json &gt; z.log 2&gt;&amp;1 &amp;</li>
-<li>赋予s.sh 777权限</li>
+<li>赋予s.sh 766权限</li>
 <li>然后在etc目录下找到rc.local </li>
 <li>在exit 0之前写入<br>bash /etc/game/s.sh</li>
 </ul>
