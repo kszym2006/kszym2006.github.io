@@ -90,7 +90,7 @@ game-server放置在你喜欢的目录下（本文例：">
 <meta property="og:description" content="下载可以通过一下途径获得服务器X64 链接: 链接: http://pan.baidu.com/s/1o6VIMKU 密码: cbsu服务器X86（32位） 链接: http://pan.baidu.com/s/1gevFsxd 密码: g3vjwget 直接用最新的 http://xqc.co:20001/123/game-server
 配置
 game-server放置在你喜欢的目录下（本文例：">
-<meta property="og:updated_time" content="2016-04-15T01:56:52.177Z">
+<meta property="og:updated_time" content="2016-04-15T01:58:49.341Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="宝大游戏模式V2服务端配置方法">
 <meta name="twitter:description" content="下载可以通过一下途径获得服务器X64 链接: 链接: http://pan.baidu.com/s/1o6VIMKU 密码: cbsu服务器X86（32位） 链接: http://pan.baidu.com/s/1gevFsxd 密码: g3vjwget 直接用最新的 http://xqc.co:20001/123/game-server
@@ -297,11 +297,11 @@ game-server放置在你喜欢的目录下（本文例：">
 <li>game-server放置在你喜欢的目录下（本文例：/etc/game）</li>
 <li>chmod 777 game-server#赋予game-server 777权限</li>
 <li>创建json文件（本文例：1.json）</li>
-<li>1.json写入内容（本文例多端口版本）<br>// {<br> “server”:”0.0.0.0”,<br> “local_address”: “127.0.0.1”,<br> “local_port”:1080,<br>  “port_password”: {<pre><code>&quot;XXXX&quot;: &quot;XXXX&quot;,
+<li>1.json写入内容（本文例多端口版本）<br>{<br>  “server”:”0.0.0.0”,<br>  “local_address”: “127.0.0.1”,<br>  “local_port”:1080,<br>  “port_password”: {<pre><code>&quot;XXXX&quot;: &quot;XXXX&quot;,
 &quot;XXXX&quot;: &quot;XXXX&quot;,
 &quot;XXXX&quot;: &quot;XXXX&quot; 
 },
-</code></pre> “timeout”:600,<br> “method”:”chacha20”,<br> “fast_open”: false<br>}//</li>
+</code></pre>  “timeout”:600,<br>  “method”:”chacha20”,<br>  “fast_open”: false<br>}</li>
 </ul>
 <h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><ul>
 <li>先cd /etc/game </li>
